@@ -47,6 +47,157 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+ *{
+   margin: 0;
+  padding: 0; 
+   box-sizing: border-box;
+  font-size: var(--font-paragraph); 
+} 
+
+
+@media (min-width:600px){
+  body{
+    min-height:100vh;
+    display:grid;
+    place-items: center;
+    background-color: var(--clr-paleBlue);
+  }
+
+  .main-section{
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    box-shadow: .5rem 1rem 3rem rgba(0,0,0,.1);
+    overflow: hidden;
+    margin-inline:1rem ;
+    background-color: var(--clr-white);
+    
+  
+  }
+  .results-section{
+    border-radius: 2rem ;
+    
+  }
+
+}
+
+ body {
+  font-family: var( --fs-base);
+  font-size: var(--font-paragraph);
+  color:var(--clr-darkGrayBlue);
+  background-color: var(--clr-paleBlue);
+}
+.result-title{
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+}
+.main-section{
+  max-width: 40rem;
+  display: grid;
+  background-color: var(--clr-white);
+}
+.results-section,.summary-section{
+  padding: 2.5rem;
+}
+.results-section{
+  background: linear-gradient(var(--gra-lightSlateBlue),var(--gra-lightRoyalBlue));
+  text-align: center;
+  color: var(--clr-lightLavender);
+  border-radius: 0 2rem 2rem 2rem;
+
+}
+.summary-section{
+  background-color:var(--clr-white) ;
+}
+.score{
+  width: 12rem;
+  background: linear-gradient(var(--gra-violetBlue),var(--gra-persianBlue));
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-inline: auto;
+  display: grid;
+  place-content: center;
+
+}
+.score span{
+  display: block;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--clr-paleBlue);
+}
+.result-details{
+  color: var(--clr-paleBlue);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.grid-flow{
+  display: grid;
+  align-content: start;
+  gap:1rem;
+
+}
+.summary-tittle{
+  color: var(--clr-darkGrayBlue);
+  margin-bottom: 15px;
+}
+.summary-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+ 
+
+}
+.summ1{
+  background-color:rgb(253, 232, 232);
+  color:var(--clr-lightRed) ;
+}
+.summ2{
+  background-color: rgb(252, 252, 237);
+  color: var(--clr-orangeYellow);
+
+}.summ3{
+  background-color:rgb(230, 248, 245) ;
+  color: rgb(0, 128, 107);
+
+}.summ4{
+  background-color: rgb(232, 241, 255);
+  color: var(--clr-cobaltBlue);
+
+}
+  
+.summary-score{
+  color: var(--clr-darkGrayBlue);
+
+  font-weight:var( --fw-black) ;
+  
+}
+.summary-score span{
+  color: gray;
+  opacity: 0.5;
+
+}
+.group-flex{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+
+.button{
+  color:var(--clr-white);
+  background-color: var(--clr-darkGrayBlue);
+  padding: 16px 32px;
+  border-radius:25px;
+  line-height: 1;
+  border: 0;
+  cursor: pointer;
+}
+.button:hover , .button:focus-visible{
+  background: linear-gradient(var(--gra-lightSlateBlue),var(--gra-lightRoyalBlue));
+}
+
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
